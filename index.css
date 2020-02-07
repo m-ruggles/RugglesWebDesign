@@ -24,13 +24,20 @@ ul {
 	padding-right: 20px;
 	color: white;
 }
+.dark {
+	padding: 15px;
+	background: #35424a;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 /* Header */
 header {
 	background: #35424a;
 	color: white;
 	padding-top: 30px;
-	min-height: 70px;
+	height: 75px;
 	border-bottom: #e8491d 3px solid;
 }
 
@@ -50,11 +57,11 @@ header #branding {
 	float: left;
 }
 header #branding h1 {
-	margin: 0;
+	margin-top: 0px;
 }
 nav {
 	float: right;
-	margin-top: 15px;
+	margin-top: 17px;
 }
 
 header .highlight {
@@ -118,10 +125,105 @@ header a:hover {
 	width: 90px;
 }
 
+/* Sidebar */
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+	width: 90%;
+	padding: 5px;
+}
+
+/* mainCol */
+article#mainCol {
+	float: left;
+	width: 65%;
+}
+
+/* Services */
+ul#services li {
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+}
+.dark {
+	margin-top: 55px;
+}
+
+/* Footer */
 footer {
 	padding: 20px;
 	margin-top: 20px;
 	color: white;
 	background: #e8491d;
 	text-align: center;
+}
+
+/* Media Query */
+@media (max-width: 800px) {
+	header {
+		height: 100px;
+	}
+
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#newsletter input {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#showcase {
+		background-position-y: 0px;
+	}
+	#showcase h1 {
+		margin-top: 40px;
+	}
+	#boxes .box {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	section #mainCol {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	section #sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	header #branding h1 {
+		font-size: 25px;
+	}
+	header li {
+		padding: 0px 10px 0px 10px;
+	}
+	#showcase h1 {
+		margin-top: 30px;
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.button1 {
+		height: 38px;
+		background: #e8491d;
+		border: 0;
+		margin-top: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		color: white;
+		width: 100%;
+	}
 }
